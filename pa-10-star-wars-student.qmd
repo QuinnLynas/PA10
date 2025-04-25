@@ -72,15 +72,15 @@ sw_films[[4]][["title"]]
 sw_films %>% pluck(4,"title")
 ```
 
-> Insert Answer Here
+> The two codes do the same thing. Pluck is from the purrr package and the brackets are base R.
 
 Suppose we want to pull out just the titles as a character vector, select the correct code (comment out the rest) to perform this action. You may want to run each line of code one at a time (remember `Ctrl + Enter` for Windows with your cursor on that line of code).
 
 ```{r}
 #comment out the incorrect codes
-sw_films %>% map("title")
+#sw_films %>% map("title")
 sw_films %>% map_chr("title")
-sw_films %>% map_dfc("title")
+#sw_films %>% map_dfc("title")
 ```
 
 Suppose we want to apply a function to count the number of specific kinds of ships and vehicles in our data
@@ -99,7 +99,7 @@ map_dbl(sw_films, ~length(.x$starships))
 sw_films %>% map_dbl(., ~length(.x$starships))
 ```
 
-> Insert Answer
+> All codes utilize purrr package. The first one grabs starships and then the number in two different functions. The second one selects the list, then uses the length function to calculate how many there are. The last just pipes what the second function does.
 
 
 
