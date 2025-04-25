@@ -1,6 +1,6 @@
 ---
 title: "PA 10: Exploring the Star Wars Universe"
-author: "Instructions"
+author: "Karla, Quinn"
 format: 
   html: default
   gfm: default
@@ -17,6 +17,7 @@ execute:
 
 library(tidyverse)
 library(repurrrsive) #this contains the data sw_films, may need to install
+#install.packages("repurrrsive")
 library(magrittr)
 ```
 
